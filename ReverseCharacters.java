@@ -18,7 +18,7 @@ public class ReverseCharacters {
         char ch_arr[]=input_str.toCharArray();
         for(int i=0;i<ch_arr.length;i++)
         {
-            if(ch_arr[i]>=65 && ch_arr[i]<=91 || ch_arr[i]>=97 && ch_arr[i]<=123)
+            if(Character.isLetterOrDigit(ch_arr[i]))
             {
                 chars.add(ch_arr[i]);
             }
